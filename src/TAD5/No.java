@@ -1,39 +1,27 @@
 package TAD5;
 
-public class No {
+public class No<T> {
+    private T dado;
+    private No<T> proximo;
 
-    private int valor;
-    private No proximo;
-    private No anterior;
-
-    public No(int valor) {
-        this.valor = valor;
+    public No(T dado) {
+        this.dado = dado;
         this.proximo = null;
-        this.anterior = null;
     }
 
-    public int getValor() {
-        return valor;
+    public T getDado() {
+        return dado;
     }
 
-    public void setValor(int valor) {
-        this.valor = valor;
+    public void setDado(T dado) {
+        this.dado = dado;
     }
 
-    public No getProximo() {
+    public No<T> getProximo() {
         return proximo;
     }
 
-    public void setProximo(No proximo) {
+    public void setProximo(No<T> proximo) {
         this.proximo = proximo;
     }
-
-    public No getAnterior() {
-        return anterior;
-    }
-
-    public void setAnterior(No anterior) {
-        this.anterior = anterior;
-    }
 }
-

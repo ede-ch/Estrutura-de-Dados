@@ -2,38 +2,22 @@ package TAD5;
 
 public class App {
     /*
-     * - Implemente um TAD LDE que armazena inteiros;
-     * - Em seguida, refatore o método remove() de modo que a busca ocorra em outro
-     * método e seu retorno seja utilizado no método remove();
-     * - Implemente o método de impressão de modo que seja possível escrever os
-     * inteiros em ambos os sentidos;
+     * Implemente um TAD LSE genérica de modo que seja possível inserir Alunos ou
+     * quaisquer outros tipos de objetos.
+     * Implemente um método para fazer a impressão da lista.
      */
-
     public static void main(String[] args) {
-        ListaDuplamenteEncadeada lista = new ListaDuplamenteEncadeada();
+        
+        LSE<Aluno> listaAlunos = new LSE<>();
 
-        lista.inserir(10);
-        lista.inserir(20);
-        lista.inserir(30);
-        lista.inserir(40);
+        Aluno aluno1 = new Aluno("João", 0);
+        Aluno aluno2 = new Aluno("Maria", 0);
+        Aluno aluno3 = new Aluno("Pedro", 0);
 
-        System.out.println("Impressão no sentido direto:");
-        lista.imprimirSentidoDireto();
+        listaAlunos.inserir(aluno1);
+        listaAlunos.inserir(aluno2);
+        listaAlunos.inserir(aluno3);
 
-        System.out.println("Impressão no sentido reverso:");
-        lista.imprimirSentidoReverso();
-
-        int valorBusca = 20;
-        if (lista.buscar(valorBusca)) {
-            System.out.println("Valor " + valorBusca + " encontrado na lista.");
-        } else {
-            System.out.println("Valor " + valorBusca + " não encontrado na lista.");
-        }
-
-        int valorRemocao = 30;
-        lista.remover(valorRemocao);
-
-        System.out.println("Lista após remoção do valor " + valorRemocao + ":");
-        lista.imprimirSentidoDireto();
+        listaAlunos.imprimir();
     }
 }
