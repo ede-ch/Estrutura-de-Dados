@@ -1,10 +1,17 @@
 package TAD5;
 
 public class App {
+    /*
+     * - Implemente um TAD LDE que armazena inteiros;
+     * - Em seguida, refatore o método remove() de modo que a busca ocorra em outro
+     * método e seu retorno seja utilizado no método remove();
+     * - Implemente o método de impressão de modo que seja possível escrever os
+     * inteiros em ambos os sentidos;
+     */
 
     public static void main(String[] args) {
         ListaDuplamenteEncadeada lista = new ListaDuplamenteEncadeada();
-        
+
         lista.inserir(10);
         lista.inserir(20);
         lista.inserir(30);
@@ -30,4 +37,3 @@ public class App {
         lista.imprimirSentidoDireto();
     }
 }
-
