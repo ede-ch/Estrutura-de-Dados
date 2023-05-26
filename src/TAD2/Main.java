@@ -1,6 +1,6 @@
 package TAD2;
 
-public class App {
+public class Main {
     /*
      * Criar uma classe Aluno. Sobre um aluno devem ser guardados:
      * Nome
