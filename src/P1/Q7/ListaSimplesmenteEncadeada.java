@@ -1,4 +1,6 @@
-public class ListaSimplesmenteEncadeada {
+package P1.Q7;
+
+class ListaSimplesmenteEncadeada {
     private No inicio;
 
     public void imprime_rec() {
@@ -12,5 +14,8 @@ public class ListaSimplesmenteEncadeada {
 
         System.out.println(no.valor);
         imprimeRecursivo(no.proximo);
+    }
+
+    public void adicionarOrdenado(int i) {
     }
 }
